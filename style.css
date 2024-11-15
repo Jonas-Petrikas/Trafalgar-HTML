@@ -6,6 +6,7 @@
     --black: #000000;
     --xl:1920px;
     --lg: 1280px;
+    --cw: 1120px;
     --ta: all 0.3s;
 }
 *{
@@ -54,12 +55,7 @@ header{
     margin-right: auto;
 
 }
-header img.element1{
-    position: absolute;
-    height: 115px;
-    top: 120px;
-    left: -50px;
-}
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -142,8 +138,14 @@ button.secondary-button:hover {
     margin-left: auto;
     margin-right: auto;
     padding: 0 30px 0 30px;
+    position:relative;
 }
-
+.hero img.element1{
+    position: absolute;
+    height: 115px;
+    top: 50px;
+    left: -150px;
+}
 .hero .hero-left{
     margin: auto;
     height: 340px;
@@ -153,24 +155,11 @@ button.secondary-button:hover {
 /* SERVICES */
 .services{
     width: 100%;
-    margin-top: 190px;
-    padding: 0 30px 0 30px;
+    margin-top: 160px;
+    padding: 0 10px 0 10px;
     position: relative;
 }
-.services img.element2{
-    position: absolute;
-    height: 115px;
-    top: 620px;
-    right: 120px;
-    z-index: -1;
-}
-.services img.bg-element{
-    position: absolute;
-    height: 620px;
-    top: 400px;
-    left: -20px;
-    z-index: -1;
-}
+
 .services .services-bin{    
     text-align: center;
     display: flex;
@@ -178,7 +167,22 @@ button.secondary-button:hover {
 }
 .services .services-bin-content{
     width: 100%;
-    max-width: var(--lg);
+    max-width: var(--cw);
+    position: relative;
+}
+.services .services-bin-content img.element2{
+    position: absolute;
+    height: 115px;
+    top: 620px;
+    right: -40px;
+    z-index: -1;
+}
+.services .services-bin-content img.bg-element{
+    position: absolute;
+    width: 940px;
+    top: 0px;
+    left: -320px;
+    z-index: -1;
 }
 .dash{
     height: 2px;
@@ -189,8 +193,13 @@ button.secondary-button:hover {
 }
 .services .services-bin-content p{
     margin-top: 30px;
-    padding: 0 170px 0 170px;
+    padding: 0 75px 0 75px;
     margin-bottom: 80px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+
 }
 
 .block-bin{
@@ -200,7 +209,7 @@ button.secondary-button:hover {
     margin-bottom: 70px;
 }
 .block-bin .block-container{
-    max-width: var(--lg);
+    max-width: var(--cw);
     display: flex;
     justify-content: center;
     width: 100%;
@@ -230,6 +239,7 @@ button.secondary-button:hover {
 }
 /* PROVIDERS */
 .providers{
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -238,6 +248,14 @@ button.secondary-button:hover {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 260px;
+    right: calc((var(--lg) - var(--cw)) / 2);
+}
+.providers img.element2{
+    position: absolute;
+    height: 115px;
+    top: 570px;
+    right: -400px;
+    z-index: -1;
 }
 .providers .providers-left img{
     width: 650px;
@@ -254,6 +272,7 @@ button.secondary-button:hover {
 
 /* APPS */
 .apps{
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -262,6 +281,7 @@ button.secondary-button:hover {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 260px;
+    left: calc((var(--lg) - var(--cw)) / 2);
 }
 .apps .apps-right img{
     width: 650px;
@@ -291,14 +311,32 @@ section.testimonials{
     justify-content: center;
 }
 section.testimonials .testimonials-bin{
+    position: relative;
     width: 100%;
-    max-width: var(--lg);
+    max-width: var(--cw);
     background-image: linear-gradient(#67C3F3, #5A98F2);
     color: var(--white);
     display: flex;
     border-radius: 24px;
     justify-content: center;
     padding: 65px 120px 90px 120px;
+}
+
+.testimonials .testimonials-bin img.element1{
+    position: absolute;
+    height: 115px;
+    top: 350px;
+    left: -50px;
+    z-index: -1;
+
+}
+.testimonials .testimonials-bin img.element2{
+    position: absolute;
+    height: 115px;
+    top: -15px;
+    right: -50px;
+    z-index: 1;
+    overflow: hidden;
 }
 section.testimonials .testimonials-bin .testimonial-content h2{
     text-align: center;
@@ -322,8 +360,8 @@ section.testimonials .testimonials-bin .testimonial-content .testimonial{
     flex-wrap: wrap;
 }
 section.testimonials .testimonials-bin .testimonial-content .testimonial .client-name{
-    margin-left: 35px;
-    margin-right: 110px;
+    margin-left: 30px;
+    margin-right: 100px;
     width: 185px;
 }
 section.testimonials .testimonials-bin .testimonial-content .testimonial .position{
@@ -351,7 +389,24 @@ div.arrow-nav{
 }
 .blog .blog-bin{
     width: 100%;
-    max-width: var(--lg);
+    max-width: var(--cw);
+    position: relative;
+}
+.blog .blog-bin img.element2{
+    position: absolute;
+    height: 115px;
+    top: 150px;
+    left: -50px;
+    z-index: -1;
+}
+.blog .blog-bin img.bg-element{
+    position: absolute;
+    width: 620px;
+    top: -50px;
+    right: -350px;
+    z-index: 1;
+
+    
 }
 .blog .blog-bin .blog-container h2{
     text-align: center;
@@ -365,14 +420,16 @@ div.arrow-nav{
 }
 .blog .blog-bin .blog-items .blog-item {
     border-radius: 20px;
-    max-width: 400px;
+    max-width: 350px;
     box-shadow: 10px 40px 50px 0px #E5E9F666;
     padding-bottom: 35px;
     text-align: left;
     min-width: 350px;
+    z-index: 2;
+    background-color: var(--white);
 }
 .blog .blog-bin .blog-items .blog-item img{
-    max-width: 400px;
+    max-width: 350px;
     border-radius: 20px 20px 0px 0px;
 }
 .blog .blog-bin .blog-items .blog-item h3, .blog .blog-bin .blog-items .blog-item p, .blog .blog-bin .blog-items .blog-item a{
@@ -433,6 +490,22 @@ footer .footer-background {
     width: 100%;
     height: 430px;
     background-image: linear-gradient(#67C3F3, #5A98F2);
+    position: relative;
+}
+ footer img.element1{
+    position: absolute;
+    height: 115px;
+    top: -70px;
+    right: 100px;
+    z-index: -1;
+ }
+ footer img.element2{
+    position: absolute;
+    height: 115px;
+    bottom: -20px;
+    left: -20px;
+    z-index: 1;
+    overflow: hidden;
 }
 footer .footer-content{
     display: flex;
