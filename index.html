@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Indie+Flower&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a4e46d0b3e.js" crossorigin="anonymous"></script>
     <title>Trafalgar landing page</title>
 </head>
 <body>
@@ -15,13 +16,24 @@
             <div class="logo">
 <a href="index.html"><img src="images/logo.svg" alt="Trafalgar logo"></a>
             </div>
-            <ul>
+            <ul class="desktop-nav">
                 <li><a href="#" class="home">Home</a></li>
                 <li><a href="#">Find a doctor</a></li>
                 <li><a href="#">Apps</a></li>
                 <li><a href="#">Testimonials</a></li>
                 <li><a href="#">About us</a></li>
             </ul>
+            <label class="hamburger" for="menu-toggle"><i class="fa-solid fa-bars"></i></label>
+            <input type="checkbox" id="menu-toggle">
+            <ul class="mobile-nav">
+                <label class="close" for="menu-toggle">x</label>
+                <li><a href="#" class="home">Home</a></li>
+                <li><a href="#">Find a doctor</a></li>
+                <li><a href="#">Apps</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+
         </nav>
     </header>
     <main>
@@ -89,7 +101,7 @@
             <div class="button-place"><button class="secondary-button">Learn more</button></div>
         </section>
 <!-- PROVIDERS -->
-        <section class="providers">
+ <section class="providers">
             <img class="element2" src="images/element.svg" alt="decor element">
             <div class="providers-left">
                 <img src="images/providers-illustration.png">
@@ -101,7 +113,7 @@
                     in the solutions we deliver</p>
                 <a href="#"><button class="secondary-button">Learn more</button></a>
             </div>
-            </section>
+    </section>
 <!-- APPS -->
             <section class="apps">
 
