@@ -243,6 +243,7 @@ button.secondary-button:hover {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     max-width: var(--lg);
     padding: 0 30px 0 30px;
     margin-left: auto;
@@ -263,7 +264,7 @@ button.secondary-button:hover {
 .providers .providers-right{
     margin: auto;
     height: 340px;
-    min-width: 420px;
+    width: 420px;
     margin-left: 110px;
 }
 .providers .dash{
@@ -276,6 +277,7 @@ button.secondary-button:hover {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     max-width: var(--lg);
     padding: 0 30px 0 30px;
     margin-left: auto;
@@ -289,7 +291,7 @@ button.secondary-button:hover {
 .apps .apps-left{
     margin: auto;
     height: 340px;
-    min-width: 420px;
+    width: 420px;
     margin-right: 110px;
 }
 .apps .dash{
